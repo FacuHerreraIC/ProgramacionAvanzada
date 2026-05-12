@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Receta
+comment0.text=\n\ La\ clase\ Receta\ modela\ una\ receta\ para\ preparar\ pociones\n\ magicas.\n\ \n\ Se\ la\ inicializa\ con\ un\ nombre\ a\ eleccion\ y\ en\ estado\ "cerrada"\n\ en\ falso.\n\ \ \n\ Se\ deben\ agregar\ uno\ a\ uno\ los\ ingredientes\ que\ la\ conforman.\n\ Al\ terminar\ la\ carga,\ se\ la\ establece\ con\ "cerrada"\ en\ verdadero.\n\ \n\ No\ se\ puede\ usar\ una\ receta\ sin\ terminar.\n\ \n\ No\ se\ pueden\ agregar\ ingredientes\ a\ una\ receta\ terminada.\n
+comment1.params=nombre
+comment1.target=Receta(java.lang.String)
+comment1.text=\n\ El\ constructor\ debe\ inicializar\ el\ objeto\ con\ un\ nombre\n\ a\ eleccion\ y\ estado\ "ok"\ en\ falso.\n\ \n\ No\ olvidar\ construir\ el\ conjunto\ (TreeSet)\ de\ ingredientes\ \n\ \n\ @param\ nombre\ El\ nombre\ de\ la\ receta.\n
+comment2.params=ingrediente
+comment2.target=void\ addIngrediente(java.lang.String)
+comment2.text=\n\ Agrega\ un\ nuevo\ ingrediente\ a\ la\ receta.\n\ \n\ Solo\ se\ aceptaran\ nuevos\ ingredientes\ cuando\ la\n\ receta\ se\ encuentre\ sin\ terminar\ ("cerrada"\ en\ falso).\n\ \n\ @param\ ingrediente\ El\ ingrediente\ a\ agregar.\n
+comment3.params=
+comment3.target=int\ getCantidadIngredientes()
+comment3.text=\n\ Devuelve\ la\ cantidad\ de\ ingredientes\ de\ la\ receta.\n\ \n\ @return\ La\ cantidad\ de\ ingredientes\ de\ la\ receta.\n
+comment4.params=
+comment4.target=java.util.Set\ getIngredientes()
+comment4.text=\n\ Devuelve\ los\ ingredientes\ de\ la\ receta.\n\ \n\ @return\ Los\ ingredientes\ de\ la\ receta\ como\ conjunto.\n
+comment5.params=
+comment5.target=java.lang.Boolean\ cerrarReceta()
+comment5.text=\n\ Cambia\ el\ estado\ de\ la\ receta\ cuando\ tenga\ al\ menos\ dos\ (2)\ ingredientes.\n\ En\ caso\ contrario,\ no\ hace\ nada.\n\ \n\ No\ puede\ revertirse.\n\ \n\ @return\ true\ si\ se\ pudo\ cerrar\ la\ receta,\ false\ en\ caso\ contrario\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\n\ Genera\ una\ cadena\ con\ la\ informacion\ sobre\ la\ receta.\n\ \n\ Debe\ generarse\ usando\ el\ nombre,\ "incompleta"\ o\ "completa"\ segun\n\ el\ estado\ ("ok")\ y\ listar\ los\ ingredientes\ que\ la\ conforman\ con\ el\n\ formato\n\ \ \ \ \ "Receta\ <nombre>\ (<estado>)\\nIngredientes\:\\n<ingr1>\\n<ingr2>\\n..."\n\ \n\ Ejemplo\ receta\ incompleta\:\n\ \ \ \ "Receta\ voladora\ (incompleta)\n\ \ \ \ \ Ingredientes\:\n\ \ \ \ \ Pluma"\n\ \n\ Ejemplo\ receta\ completa\:\n\ \ \ \ "Receta\ voladora\ (completa)\n\ \ \ \ \ Ingredientes\:\n\ \ \ \ \ Hueso\n\ \ \ \ \ Pluma\n\ \ \ \ \ Sangre"\n\ \n\ @return\ El\ texto\ indicado\ en\ el\ ejemplo.\n
+comment7.params=
+comment7.target=java.lang.Boolean\ isCerrada()
+comment7.text=\n\ Verifica\ si\ la\ receta\ se\ puede\ usar.\n\ \n\ @return\ true\ si\ puede\ usarse\ y\ false\ si\ no\ esta\ cargada\ completamente.\n
+comment8.params=
+comment8.target=java.lang.String\ getNombre()
+numComments=9
